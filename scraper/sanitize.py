@@ -116,13 +116,18 @@ for word in wordset:
     sanitizedset.add(word.lower())
 
 if debug:
+    print(sorted(sanitizedset))
     print(len(sanitizedset))
 
 ### Writing files
+wordfile = open('wordlist.ts', 'w')
+wordfile.write('export const WORDS = [\n')
+for word in sanitizedset:
+    wordfile.write("  '" + word + "',\n")
+wordfile.write(']\n')
+
 guessfile = open('validGuesses.ts', 'w')
-guessfile.write('export const VALID_GUESSE = [\n')
+guessfile.write('export const VALID_GUESSES = [\n')
 for word in sorted(sanitizedset):
     guessfile.write("  '" + word + "',\n")
 guessfile.write(']\n')
-
-print(sanitizedset)
