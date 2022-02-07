@@ -1,6 +1,7 @@
 # Chessle
 
 Guess the Chess player. This game is inspired by the popular word guessing game [Wordle](https://www.powerlanguage.co.uk/wordle/), is based off of an open source code base [React Wordle](https://github.com/cwackerfuss/react-wordle) and inspired by [Bikle](https://github.com/giop98/bikle).
+The logo is licensed in [the public domain](https://publicdomainvectors.org/en/free-clipart/Chess-piece-symbol-image/68163.html).
 
 ## Build and run
 
