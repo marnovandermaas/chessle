@@ -1,3 +1,5 @@
+from unidecode import unidecode
+
 debug = True
 wordlen = 5
 
@@ -22,6 +24,7 @@ def extractnames(filename, startline, endline, indicatorstring, prenamestring):
             if namesplit not in line:
                 namesplit = ' '
             familyname = line.split(prenamestring)[1].split(namesplit)[0]
+            familyname = unidecode(familyname)
             if len(familyname) == wordlen:
                 retlist.append(familyname)
         if line == endline:
@@ -51,13 +54,16 @@ while True:
     if '<li><a href="' in line:
         name = line.split('">')[1].split('</a>')[0].split(' ')
         if len(name) == 2:
-            if len(name[1]) == wordlen:
-                words.append(name[1])
+            name = unidecode(name[1])
+            if len(name) == wordlen:
+                if name != 'Liren' and name != 'Zhong' and name != 'Weida':
+                    words.append(name)
     if line == endline:
         if debug:
             print('Found: ' + endline)
         break
 
+words.append('Zhang')
 playerfile.close()
 
 ### Chess terms
@@ -82,6 +88,7 @@ while True:
         if ' ' in term or '<' in term or '.' in term or '-' in term:
             None
         else:
+            term = unidecode(term)
             if len(term) == wordlen:
                 words.append(term)
     if line == endline:
@@ -98,6 +105,8 @@ if debug:
 
 sanitizedset = set()
 for word in wordset:
+    if "'" in word:
+        continue
     sanitizedset.add(word.lower())
 
 if debug:
