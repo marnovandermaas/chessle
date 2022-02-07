@@ -1,8 +1,6 @@
-# React Wordle
+# Chessle
 
-This is a clone project of the popular word guessing game we all know and love. Made using React, Typescript, and Tailwind.
-
-[**Try out the demo!**](https://reactle.vercel.app/)
+Guess the Chess player. This game is inspired by the popular word guessing game [Wordle](https://www.powerlanguage.co.uk/wordle/), is based off of an open source code base [React Wordle](https://github.com/cwackerfuss/react-wordle) and inspired by [Bikle](https://github.com/giop98/bikle).
 
 ## Build and run
 
@@ -24,36 +22,6 @@ $> docker run -d -p 3000:3000 game
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in browser.
-
-## Projects built using this repo
-
-### Other languages
-
-- [Latindictionary.io](https://wordle.latindictionary.io/): Latin
-- [Kelmaly](https://kelmaly.com/): Arabic
-- [Arwordle](https://arwordle.netlify.app/): Arabic
-- [Wörtchen](https://woertchen.sofacoach.de): German
-- [Vārdulis](wordle.lielakeda.lv/): Latvian
-- [꼬들 - 한국어](https://belorin.github.io/): Korean
-- [한글 풀어쓰기 5자](https://nakosung.github.io/wordle/): Korean
-- [Urdle](https://urdle.chaoticity.com/): Urdu
-
-### Fun themes
-
-- [Murdle](https://murdle.vercel.app/): Spooky hangman mashup
-- [Taylordle](https://www.taylordle.com/): Taylor Swift
-- [Dundle](https://dundle.dunmiffcord.com/): The Office
-- [Weedel](https://meetmeinouter.space/wordle/): Video game characters
-- [JoJodle](https://jojo-news.com/fun/jojodle/): JoJo’s Bizarre Adventure
-
-### Math, Acronyms, and more
-
-- [Primel](https://converged.yt/primel/): Prime numbers
-- [Syscordle](https://nezza.github.io/syscordle/): SYSCALL
-- [Mathler](https://www.mathler.com/): Find the solution that equals X
-- [Stockle](https://stockle.win/): Guess the stock or ETF
-- [AI-powered](https://github.com/asirota/wordle-ai): Includes an AI component
-- [Passwordle](https://passwordle.sp8c3.com/): Passwords
 
 ## FAQ
 
