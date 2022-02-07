@@ -1,5 +1,6 @@
 {
-  "name": "game",
+  "name": "chessle",
+  "homepage": "https://techroose.com/chess/chessle",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
