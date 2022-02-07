@@ -60,9 +60,46 @@ while True:
 
 playerfile.close()
 
+### Chess terms
+termfile = open('Glossary of chess - Wikipedia.html')
+
+startline = '<h2><span class="mw-headline" id="A">A</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Glossary_of_chess&amp;action=edit&amp;section=1" title="Edit section: A">edit source</a><span class="mw-editsection-bracket">]</span></span></h2>\n'
+endline = '<h2><span class="mw-headline" id="Notes">Notes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Glossary_of_chess&amp;action=edit&amp;section=26" title="Edit section: Notes">edit source</a><span class="mw-editsection-bracket">]</span></span></h2>\n'
+
+while termfile.readline() != startline:
+    None
+if debug:
+    print('Found: ' + startline)
+
+while True:
+    line = termfile.readline()
+    if '<dt class="glossary" id="' in line:
+        beforeterm = '<dfn class="glossary">'
+        afterterm = ' <span class="anchor" id="'
+        term = line.split(beforeterm)[1].split(afterterm)[0]
+        if '<a href="/wiki/' in term:
+            term = term.split('">')[1].split('</a>')[0]
+        if ' ' in term or '<' in term or '.' in term or '-' in term:
+            None
+        else:
+            if len(term) == wordlen:
+                words.append(term)
+    if line == endline:
+        if debug:
+            print('Found: ' + endline)
+        break
+
+termfile.close()
+
 ### Final processing
 wordset = set(words)
 if debug:
     print(wordset)
-    print(len(wordset))
 
+sanitizedset = set()
+for word in wordset:
+    sanitizedset.add(word.lower())
+
+if debug:
+    print(sanitizedset)
+    print(len(sanitizedset))
