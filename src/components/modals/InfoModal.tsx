@@ -48,7 +48,27 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
       </p>
 
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        In case you need any inspriation you can have a look at the <a href="https://en.wikipedia.org/wiki/List_of_chess_grandmasters">list of grandmasters</a>, the <a href="https://en.wikipedia.org/wiki/List_of_chess_players">list of chess players</a> or the <a href="https://en.wikipedia.org/wiki/Glossary_of_chess">glossary of chess</a>.
+        In case you need any inspriation you can have a look at the{' '}
+        <a
+            href="https://en.wikipedia.org/wiki/List_of_chess_grandmasters"
+            className="underline font-bold"
+        >
+            list of grandmasters
+        </a>,{' '}
+        the{' '}
+        <a
+            href="https://en.wikipedia.org/wiki/List_of_chess_players"
+            className="underline font-bold"
+        >
+            list of chess players
+        </a>{' '}
+        or the{' '}
+        <a
+            href="https://en.wikipedia.org/wiki/Glossary_of_chess"
+            className="underline font-bold"
+        >
+            glossary of chess
+        </a>.
       </p>
     </BaseModal>
   )
