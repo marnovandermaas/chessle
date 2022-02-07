@@ -14,6 +14,8 @@ $> npm install
 $> npm run start
 ```
 
+Requirements `node --version` > 14.0.0 and `npm --version` > 5.6
+
 ### To build/run docker container:
 
 ```bash
