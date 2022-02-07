@@ -112,3 +112,4 @@ for word in wordset:
 if debug:
     print(sanitizedset)
     print(len(sanitizedset))
+    print(sorted(sanitizedset))
