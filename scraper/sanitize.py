@@ -89,6 +89,8 @@ while True:
             None
         else:
             term = unidecode(term)
+            if len(term) == wordlen-1:
+                print(term)
             if len(term) == wordlen:
                 words.append(term)
     if line == endline:
