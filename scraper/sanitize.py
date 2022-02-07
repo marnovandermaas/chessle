@@ -117,5 +117,12 @@ for word in wordset:
 
 if debug:
     print(len(sanitizedset))
+
+### Writing files
+guessfile = open('validGuesses.ts', 'w')
+guessfile.write('export const VALID_GUESSE = [\n')
+for word in sorted(sanitizedset):
+    guessfile.write("  '" + word + "',\n")
+guessfile.write(']\n')
+
 print(sanitizedset)
-print(sorted(sanitizedset))
