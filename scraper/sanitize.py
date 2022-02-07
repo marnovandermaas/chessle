@@ -100,6 +100,10 @@ while True:
 
 termfile.close()
 
+morewords = ['binds', 'chess', 'draws', 'edges', 'files', 'flags', 'forks', 'holes', 'kicks', 'kings', 'lines', 'mates', 'moves', 'norms', 'pawns', 'ranks', 'rooks', 'swaps', 'takes', 'traps', 'wings']
+
+words.extend(morewords)
+
 ### Final processing
 wordset = set(words)
 if debug:
@@ -112,6 +116,6 @@ for word in wordset:
     sanitizedset.add(word.lower())
 
 if debug:
-    print(sanitizedset)
     print(len(sanitizedset))
-    print(sorted(sanitizedset))
+print(sanitizedset)
+print(sorted(sanitizedset))
