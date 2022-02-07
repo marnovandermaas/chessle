@@ -1,6 +1,6 @@
 from unidecode import unidecode
 
-debug = True
+debug = False
 wordlen = 5
 
 words = []
@@ -89,7 +89,7 @@ while True:
             None
         else:
             term = unidecode(term)
-            if len(term) == wordlen-1:
+            if len(term) == wordlen-1 and debug:
                 print(term)
             if len(term) == wordlen:
                 words.append(term)
