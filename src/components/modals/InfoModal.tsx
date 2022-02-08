@@ -10,8 +10,8 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
     <BaseModal title="How to play" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Guess the Chess word or term in 6 tries. After each guess, the color of the tiles will
-        change to show how close your guess was to the word.
+        Guess the Chess word or term in 6 tries. After each guess, the color of
+        the tiles will change to show how close your guess was to the word.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
@@ -50,25 +50,26 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
       <p className="text-sm text-gray-500 dark:text-gray-300">
         In case you need any inspriation you can have a look at the{' '}
         <a
-            href="https://en.wikipedia.org/wiki/List_of_chess_grandmasters"
-            className="underline font-bold"
+          href="https://en.wikipedia.org/wiki/List_of_chess_grandmasters"
+          className="underline font-bold"
         >
-            list of grandmasters
-        </a>,{' '}
-        the{' '}
+          list of grandmasters
+        </a>
+        , the{' '}
         <a
-            href="https://en.wikipedia.org/wiki/List_of_chess_players"
-            className="underline font-bold"
+          href="https://en.wikipedia.org/wiki/List_of_chess_players"
+          className="underline font-bold"
         >
-            list of chess players
+          list of chess players
         </a>{' '}
         or the{' '}
         <a
-            href="https://en.wikipedia.org/wiki/Glossary_of_chess"
-            className="underline font-bold"
+          href="https://en.wikipedia.org/wiki/Glossary_of_chess"
+          className="underline font-bold"
         >
-            glossary of chess
-        </a>.
+          glossary of chess
+        </a>
+        .
       </p>
     </BaseModal>
   )

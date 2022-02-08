@@ -1,6 +1,11 @@
 export const GAME_TITLE = 'Chessle'
 
-export const WIN_MESSAGES = ['You made Judit proud', 'You made Magnus proud', 'Your opponent resigns', 'Check Mate!']
+export const WIN_MESSAGES = [
+  'You made Judit proud',
+  'You made Magnus proud',
+  'Your opponent resigns',
+  'Check Mate!',
+]
 export const GAME_COPIED_MESSAGE = 'Game copied to clipboard'
 export const ABOUT_GAME_MESSAGE = 'About this game'
 export const NOT_ENOUGH_LETTERS_MESSAGE = 'Not enough letters'

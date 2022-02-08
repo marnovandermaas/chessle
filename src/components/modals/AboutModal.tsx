@@ -15,8 +15,8 @@ export const AboutModal = ({ isOpen, handleClose }: Props) => {
           className="underline font-bold"
         >
           check out the code here
-        </a>.{' '}
-        It is inspired by{' '}
+        </a>
+        . It is inspired by{' '}
         <a
           href="https://www.powerlanguage.co.uk/wordle/"
           className="underline font-bold"
@@ -29,14 +29,15 @@ export const AboutModal = ({ isOpen, handleClose }: Props) => {
           className="underline font-bold"
         >
           Bikle
-        </a>.{' '}
-        The code is based on{' '}
+        </a>
+        . The code is based on{' '}
         <a
           href="https://github.com/cwackerfuss/react-wordle"
           className="underline font-bold"
         >
           Reactle
-        </a>.{' '}
+        </a>
+        .{' '}
       </p>
     </BaseModal>
   )
